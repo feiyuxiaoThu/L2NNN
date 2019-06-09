@@ -1,0 +1,7 @@
+ignite
+pyyaml
+fire
+numpy
+torch
+torchvision
+visdom

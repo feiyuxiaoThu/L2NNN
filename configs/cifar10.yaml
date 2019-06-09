@@ -1,0 +1,25 @@
+# logger 
+prefix: runs
+visdom_port: 22222
+log_interval: 20
+
+# dataset
+dataset: cifar10
+im_size: 32
+batch_size: 128
+test_batch_size: 1000
+num_workers: 4
+
+# model
+model: resnet32
+in_channels: 3
+num_classes: 10
+
+# optimizer
+optim: SGD
+optim_params:
+    lr: 0.1
+    momentum: 0.9 
+
+# train
+max_epochs: 200

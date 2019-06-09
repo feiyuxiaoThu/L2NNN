@@ -1,0 +1,49 @@
+# logger 
+prefix: runs
+log_interval: 20
+
+# dataset
+dataset: mnist
+im_size: 28
+batch_size: 128
+test_batch_size: 1000
+num_workers: 4
+
+# model
+model: resnet32
+in_channels: 1
+num_classes: 10
+# WideResNet
+widen_factor: 10
+depth: 34
+dropRate: 0.0
+# MMLDA
+mean: 100.0
+var: 1.0
+# odenet
+ode: ConvODEFunc
+adjoint: True
+tol: 0.001
+num_filters: 64
+augment_dim: 31
+time_dependent: True
+non_linearity: relu
+# L2NNN
+v: 1.0
+v_use_grad: True
+z: 1.0
+a: 1.0
+b: 1.0
+c: 0.1
+w: 0.1
+multi: False
+norm_train: False # whether train with strict normalization or just regularization
+div_before_conv: False
+
+# optimizer
+optim: Adam
+optim_params:
+    lr: 0.001
+
+# train
+max_epochs: 100
